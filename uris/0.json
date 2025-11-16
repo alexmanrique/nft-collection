@@ -1,0 +1,19 @@
+{
+  "name": "Blockchain Art NFT",
+  "description": "BANftCollection",
+  "image": "https://example.com/image.png",
+  "attributes": [
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Type",
+      "value": "NFT"
+    },
+    {
+      "trait_type": "Owner",
+      "value": "Owner"
+    }
+  ]
+}
