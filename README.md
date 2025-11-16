@@ -1,66 +1,18 @@
-## Foundry
+# NFT Collection
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+An ERC721 NFT collection implemented with Foundry and OpenZeppelin.
 
-Foundry consists of:
+## Contract
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+**BANftCollection**: An ERC721 contract that allows creating a limited NFT collection with:
 
-## Documentation
+- Configurable total supply
+- Public minting until the limit is reached
+- Customizable base URI for metadata
 
-https://book.getfoundry.sh/
+### Features
 
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- Standard ERC721 implementation using OpenZeppelin
+- Total supply control
+- Sequential minting with incremental IDs
+- Configurable base URI for metadata
