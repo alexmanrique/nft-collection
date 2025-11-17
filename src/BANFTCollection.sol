@@ -10,7 +10,9 @@ contract BANftCollection is ERC721 {
 
     event Mint(address to, uint256 tokenId);
 
-    constructor(string memory name_, string memory symbol_, uint256 initialSupply_, string memory baseURI_) ERC721(name_, symbol_) {
+    constructor(string memory name_, string memory symbol_, uint256 initialSupply_, string memory baseURI_)
+        ERC721(name_, symbol_)
+    {
         baseURI = baseURI_;
         totalSupply = initialSupply_;
     }
