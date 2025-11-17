@@ -6,10 +6,8 @@ import {Script} from "../lib/forge-std/src/Script.sol";
 
 contract DeployNFTCollection is Script {
     function setUp() public {}
-    
-    
-    function run() external returns (BANftCollection) {
 
+    function run() external returns (BANftCollection) {
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
         string memory name = "Blockchain Art NFT";

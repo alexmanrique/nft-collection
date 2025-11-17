@@ -31,11 +31,10 @@ contract BANftCollection is ERC721 {
         return baseURI;
     }
 
-    function tokenURI(uint256 tokenId) public view override returns (string memory){
+    function tokenURI(uint256 tokenId) public view override returns (string memory) {
         _requireOwned(tokenId);
 
         string memory baseURI = _baseURI();
         return bytes(baseURI).length > 0 ? string.concat(baseURI, tokenId.toString(), ".json") : "";
     }
-
 }
