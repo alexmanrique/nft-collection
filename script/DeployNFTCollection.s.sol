@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.30;
 
-import {BANftCollection} from "../src/BANftCollection.sol";
+import {BANFTCollection} from "../src/BANFTCollection.sol";
 import {Script} from "../lib/forge-std/src/Script.sol";
 
 contract DeployNFTCollection is Script {
     function setUp() public {}
 
-    function run() external returns (BANftCollection) {
+    function run() external returns (BANFTCollection) {
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
         string memory name = "Blockchain Art NFT";
@@ -16,7 +16,7 @@ contract DeployNFTCollection is Script {
         string memory baseURI = "ipfs://bafybeihuvshiwoypjlhwxa3xa3e7ghdokhrjwxahdsrnlcu5adtpjxnheu";
 
         vm.startBroadcast();
-        BANftCollection nftCollection = new BANftCollection(name, symbol, initialSupply, baseURI);
+        BANFTCollection nftCollection = new BANFTCollection(name, symbol, initialSupply, baseURI);
         vm.stopBroadcast();
 
         return nftCollection;

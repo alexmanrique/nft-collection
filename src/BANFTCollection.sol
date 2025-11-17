@@ -4,7 +4,7 @@ pragma solidity ^0.8.30;
 import {ERC721} from "../lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol";
 import {Strings} from "../lib/openzeppelin-contracts/contracts/utils/Strings.sol";
 
-contract BANftCollection is ERC721 {
+contract BANFTCollection is ERC721 {
     using Strings for uint256;
 
     uint256 public totalSupply;
