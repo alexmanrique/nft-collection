@@ -1,7 +1,7 @@
 {
   "name": "Blockchain Art NFT",
   "description": "BANftCollection",
-  "image": "https://example.com/image.png",
+  "image": "ipfs://bafkreifz747u2alcqkgzyi3npaqecokcgs5gznkujuoejxqinpzpaltzaq",
   "attributes": [
     {
       "trait_type": "Rarity",
